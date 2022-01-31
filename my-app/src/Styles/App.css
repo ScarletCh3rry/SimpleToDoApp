@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    min-width: 800px;
+    max-width: 75%;
+}
+
+.search__container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.post{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 15px;
+    border: 2px solid darkred;
+    align-items: center;
+}
+.blank__space{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8b0000;
+    font-family: sans-serif, Serif;
+    font-size: 20px;
+}
+
+.post-enter {
+    transform: translateX(-150px);
+    opacity: 0;
+}
+.post-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper{
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_btn{
+    min-width: 43px;
+    min-height: 43px;
+    color: darkred;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid darkred;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.page_btn:hover{
+    border: 2px solid teal;
+    color: teal;
+    transition: .3s ease-in-out;
+}
+
+.page__current{
+    border: 2px solid teal;
+    color: teal;
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(236, 58, 16, 0.2);
+}
+
+.nav_links_container{
+    height: 100%;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links{
+    padding: 5px 5px;
+    margin: 0 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: darkred;
+}
+
+.nav_links:hover{
+    border-top: darkred 2px solid;
+    border-bottom: darkred 2px solid;
+    border-radius: 10%;
+    transition: .07s all;
+}
+
+.auth_text{
+    color: rgba(236, 58, 16, 0.9);
+    font-family: sans-serif;
+
+}
+
+.login_container{
+    height: 17vh;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_form{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post__btns{
+    display: flex;
+}
